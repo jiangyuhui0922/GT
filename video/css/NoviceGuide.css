@@ -1,0 +1,150 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.clear{overflow: hidden;}
+.VideoHtml{
+    width: 100%;
+    height: 15rem;
+    background: url(../images/bg.jpg) center center no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+.VideoHtml2{
+    width: 100%;
+    height: 15rem;
+    background: url(../images/bg2.png) center center no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding-top: 0.53rem
+}
+.VideoTitle{
+    width: 3.75rem;
+    height: 1.05rem;
+    background: url(../images/titleBg.png) center center no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto 0.25rem;
+}
+.VideoHead{
+    width: 100%;
+    box-sizing: border-box;
+    /* padding: 0 0.82rem;*/
+    background: url(../images/icon1_06.png) left 0.75rem no-repeat; 
+    background-size: 7.5rem 2.25rem;
+}
+.VideoHead .VideoHeadTitle{
+    width: 2.73rem;height: 0.46rem;
+    margin: 0 auto 0.2rem;
+    background: url(../images/title1.png) center center no-repeat;
+    background-size: 100%; 
+}
+.VideoHeadVideo .videoP{
+    width: 5.86rem;
+    height: 2.28rem;
+    margin: 0 auto;
+    background: url(../images/videoBox1.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.VideoConte{
+    margin: 0.3rem 0;
+}
+.VideoConte .VideoConteTitle{
+    width: 2.73rem;height: 0.46rem;
+    margin: 0 auto 0.2rem;
+    background: url(../images/title2.png) center center no-repeat;
+    background-size: 100%; 
+}
+.VideoConte .videoConV{
+    width: 5.91rem;    margin: 0 auto;
+    overflow: hidden;
+}
+.VideoConte .videoConV .videoP{
+    float: left;
+    width: 1.73rem;height: 1.91rem;
+}
+.VideoConte .videoConV .videoP:nth-child(1){
+    background: url(../images/videoBox2.png) center center no-repeat;
+    background-size: 100%; 
+}
+.VideoConte .videoConV .videoP:nth-child(2){
+    background: url(../images/videoBox3.png) center center no-repeat;
+    background-size: 100%; 
+    margin: 0 0.35rem
+}
+.VideoConte .videoConV .videoP:nth-child(3){
+    background: url(../images/videoBox4.png) center center no-repeat;
+    background-size: 100%; 
+}
+.VideoFoot .VideoFootTitle{
+    width: 2.73rem;height: 0.46rem;
+    margin: 0 auto 0.2rem;
+    background: url(../images/title2.png) center center no-repeat;
+    background-size: 100%; 
+}
+.VideoFoot .videoF{
+    width: 5.86rem;    margin: 0 auto;
+    overflow: hidden; 
+}
+.VideoFoot .videoF p{
+    float: left;
+}
+.VideoFoot .videoP1{
+    width: 2.74rem;height: 1.68rem;    margin-bottom: 0.32rem
+}
+.VideoFoot .videoP2{
+    width: 1.73rem;height: 2.11rem;
+}
+.VideoFoot .videoP1:nth-child(1){
+    background: url(../images/videoBox5.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.VideoFoot .videoP1:nth-child(1){
+    background: url(../images/videoBox5.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.VideoFoot .videoP1:nth-child(2){
+    background: url(../images/videoBox6.png) center center no-repeat;
+    background-size: 100% 100%;margin-left: 0.36rem
+}
+.VideoFoot .videoP2:nth-child(3){
+    background: url(../images/videoBox7.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.VideoFoot .videoP2:nth-child(4){
+    background: url(../images/videoBox8.png) center center no-repeat;
+    background-size: 100% 100%;margin: 0 0.33rem;
+}
+.VideoFoot .videoP2:nth-child(5){
+    background: url(../images/videoBox9.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.VideoHtml .footer{
+    margin-top: 0.44rem;
+    padding-left: 0.83rem;
+}
+.VideoHtml img{
+    width: 4.13rem;
+    height: 1.40rem;
+}
+#hiddVid{
+   position: fixed;
+   top: 0;right: 0;
+   background: url(../images/hidden.png) center center no-repeat #fff;;
+   border-radius: 0 0 0 120%;
+   background-size: 100% 100%;
+   width: 0.8rem;height: 0.8rem;
+   z-index: 10;
+   display: none;
+}
+.vidBox{
+    position: fixed;
+    width: 100%;height: 100%;top: 0;left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+}
+.vidBox #vid{
+    width: 80%;margin: 0 auto;display: block;
+    position: absolute;top: 50%;left: 10%;
+    transform: translateY(-50%)
+}
+.VideoHtml .show{display: block !important;}

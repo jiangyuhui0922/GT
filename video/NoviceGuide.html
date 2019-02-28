@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection">
+	<title>新手引导</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/NoviceGuide.css">
+</head>	
+<body>
+	<div class="VideoHtml">
+		<div class="VideoHtml2">
+			<p class="VideoTitle"></p> 
+			<div class="VideoHead">
+				<p class="VideoHeadTitle"></p>
+				<div class="VideoHeadVideo" >
+					<p class="videoP vid"></p>
+				</div>
+			</div>
+			<div class="VideoConte">
+				<p class="VideoConteTitle"></p>
+				<div class="videoConV">
+					<p class="videoP vid"></p>
+					<p class="videoP vid"></p>
+					<p class="videoP vid"></p>
+				</div>
+			</div>
+			<div class="VideoFoot">
+				<p class="VideoFootTitle"></p>
+				<div class="videoF">
+					<p class="videoP1 vid"></p>
+					<p class="videoP1 vid"></p>
+					<p class="videoP2 vid"></p>
+					<p class="videoP2 vid"></p>
+					<p class="videoP2 vid"></p>
+				</div>
+			</div>
+			<div class="footer"><img src="images/footBg.png"></div>
+			<div class="vidBox">
+				<video src="" id="vid" controls></video>
+			</div>
+			<div id="hiddVid"></div>
+		</div>
+	</div>
+	<script src="./js/shipei.js"></script>
+	<script>
+		const PClick= document.getElementsByClassName('vid') 
+		const Vid=document.getElementById('vid')
+		const HiddenVid=document.getElementById('hiddVid')
+		const VidBox=document.getElementsByClassName('vidBox')[0]
+		const bodyBox=document.getElementsByTagName('body')[0]
+		const VidSrc=[
+			'http://video.aikucun.com/video/4fadf22f-1692cbe2dc6-0005-5acd-5eb-e3ea2.mp4',
+			'http://video.aikucun.com/video/5ce5a7b-1692cbe299f-0005-5acd-5eb-e3ea2.mp4',
+			'http://video.aikucun.com/video/47388753-1692cbe0c86-0005-5acd-5eb-e3ea2.mp4',
+			'http://video.aikucun.com/video/53d1e14d-1692cbe0c88-0005-5acd-5eb-e3ea2.mp4',
+			'http://video.aikucun.com/video/281d9dd1-1692cbe0c89-0005-5acd-5eb-e3ea2.mp4',
+			'http://video.aikucun.com/video/3a729e05-1692cbe0c86-0005-5acd-5eb-e3ea2.mp4',
+			'http://video.aikucun.com/video/33359f97-1692cbe2767-0005-5acd-5eb-e3ea2.mp4',
+			'http://video.aikucun.com/video/24466977-1692cbe0c87-0005-5acd-5eb-e3ea2.mp4',
+			'http://video.aikucun.com/video/3014ed14-1692cbe18eb-0005-5acd-5eb-e3ea2.mp4',
+		]
+		function show(){
+			VidBox.classList.add('show')
+			HiddenVid.classList.add('show')
+			bodyBox.classList.add('clear')
+			Vid.play();
+		}
+		function hidden(){
+			VidBox.style.display="none"
+			Vid.stop()
+		}
+		HiddenVid.onclick=function(){
+			const Vid=document.getElementById('vid')
+			VidBox.classList.remove('show')
+			HiddenVid.classList.remove('show')
+			bodyBox.classList.remove('clear')
+			Vid.pause();
+		}
+		PClick[0].onclick=function(){
+			Vid.src=VidSrc[0];
+			show()
+		}
+		PClick[1].onclick=function(){
+			Vid.src=VidSrc[1];
+			show()
+		}
+		PClick[2].onclick=function(){
+			Vid.src=VidSrc[2];
+			show()
+		}
+		PClick[3].onclick=function(){
+			Vid.src=VidSrc[3];
+			show()
+		}
+		PClick[4].onclick=function(){
+			Vid.src=VidSrc[4];
+			show()
+		}
+		PClick[5].onclick=function(){
+			Vid.src=VidSrc[5];
+			show()
+		}
+		PClick[6].onclick=function(){
+			Vid.src=VidSrc[6];
+			show()
+		}
+		PClick[7].onclick=function(){
+			Vid.src=VidSrc[7];
+			show()
+		}
+		PClick[8].onclick=function(){
+			Vid.src=VidSrc[8];
+			show()
+		}
+	</script>
+</body>
+</html>
